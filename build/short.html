@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Easy-webdev-startpack v3.0</title>
+</head>
+
+
+<body>
+    <header class="header">
+  <div class="header__container">
+    <a href="/" class="header__logo"><img src="../img/logo.svg" alt="" /></a>
+    <nav class="nav">
+      <a href="#delivery" class="nav__item">Доставка и оплата</a>
+      <a href="#about" class="nav__item">О компании</a>
+      <a href="#contacts" class="nav__item">Где купить</a>
+      <a href="#contacts" class="nav__item">Контакты</a>
+      <a href="#" class="nav__item nav__item--right" data-modal="order-modal"
+        >Заказать</a
+      >
+    </nav>
+
+    <svg
+      class="ham hamRotate ham4 nav--btn"
+      viewBox="0 0 100 100"
+      width="80"
+      onclick="this.classList.toggle('active')"
+    >
+      <path
+        class="line top"
+        d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+      />
+      <path class="line middle" d="m 70,50 h -40" />
+      <path
+        class="line bottom"
+        d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+      />
+    </svg>
+
+    <div class="nav--menu">
+      <a href="#delivery" class="nav__item nav__item--mobile">Доставка и оплата</a>
+      <a href="#about" class="nav__item nav__item--mobile">О компании</a>
+      <a href="#contacts" class="nav__item nav__item--mobile">Где купить</a>
+      <a href="#contacts" class="nav__item nav__item--mobile">Контакты</a>
+      <a href="#" class="nav__item nav__item--order nav__item--mobile" data-modal="order-modal"
+        >Заказать <img src="./img/cart.svg" alt=""
+      /></a>
+
+      <div class="header__contacts">
+        г.Нижний Новгород, <br />ул.Артельная, д.35, оф.105 <br />Время работы:
+        с 10:00 до 18:00
+      </div>
+
+      <div class="header__contacts">
+        <a href="tel:+79965662716">+7 (996) 566-27-16</a>
+        <a href="mailto:harma-grow@mail.ru">harma-grow@mail.ru</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+        <section class="topblock product">
+            <div class="container topblock__grid topblock__grid--product">
+                <div class="sticker product">
+                    <div class="topblock__productheading">
+                        <h1 class="sticker__title sticker__title--picture"><img src="./img/short-p.svg" alt=""></h1>
+                        <div class="sticker__weight">
+                            <div>15-6-26</div>
+                            <div>2.5 kg</div>
+                        </div>
+                    </div>
+                    <div class="sticker__info italic">
+                        HARMA POWDER<br />NUTRIENTS SHORT
+                    </div>
+
+                    <div class="sticker__productinfo">
+                        это профессиональное однокомпонентное удобрение для растений с коротким
+                        циклом цветения.<br />Порошковый концентрат.
+                    </div>
+                    <div class="sticker__buttons">
+                        <button class="btn" data-modal="order-modal"><span>Оставить оптовую заявку</span></button>
+						<a href="#contacts"><button class="btn btn__secondary">Купить в розницу</button></a>
+                    </div>
+
+                    <div class="sticker__leave-info product">
+                        Оставьте заявку и наш менеджер свяжется с вами в ближайшее время для уточнения всех вопросов
+                        и оформления вашего заказа
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="./img//booster-pic.png" alt="" class="topblock__productpic">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contents">
+            <div class="container">
+                <div class="contents__grid">
+                    <div>
+                        <h2 class="contents__title">Состав макроэлементов <nobr>и их пропорции:</nobr>
+                        </h2>
+                        <div class="contents__subgrid">
+                            <div class="contents__col">
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">6% </div>
+                                        <div>P<sub>2</sub>O<sub>5</sub></div>
+                                    </div>
+                                    <div>Водорастворимый фосфат</div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">2,1% </div>
+                                        <div>S</div>
+                                    </div>
+                                    <div>Сера</div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">5% </div>
+                                        <div>NH<sub>3</sub>N</div>
+                                    </div>
+                                    <div>Амиачный азот</div>
+                                </div>
+                            </div>
+
+                            <div class="contents__col">
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">26% </div>
+                                        <div>K<sub>2</sub>O</div>
+                                    </div>
+                                    <div>Водорастворимый калий</div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">11% </div>
+                                        <div>NS</div>
+                                    </div>
+                                    <div>Нитрат азота</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="contents__title">Состав микроэлементов <nobr>и их пропорции:</nobr>
+                        </h2>
+                        <div class="contents__subgrid">
+                            <div class="contents__col">
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">2% </div>
+                                        <div>Mg</div>
+                                    </div>
+                                    <div>Растворимый магний</div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">0,05%</div>
+                                        <div>Mn</div>
+                                    </div>
+                                    <div>Растворимый Марганец <nobr>(как хелат с EDTA)</nobr>
+                                    </div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">0,002%</div>
+                                        <div>Mo</div>
+                                    </div>
+                                    <div>Молибден</div>
+
+                                </div>
+                            </div>
+
+                            <div class="contents__col">
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">0.01% </div>
+                                        <div>B</div>
+                                    </div>
+                                    <div>Растворимый бор</div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">0,1%</div>
+                                        <div>Fe</div>
+                                    </div>
+                                    <div>Растворимого железа <nobr>(в хелатной форме EDTA)</nobr>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <section class="table">
+            <div class="container">
+                <div class="table__title">
+                    <h2>Таблица кормления:</h2>
+                </div>
+
+                <div class="table__container">
+                    <div class="table__grid">
+                        <div class="table__left">
+                            <div class="table__leftitem">longFlowering, g/L</div>
+                            <div class="table__leftitem">EC, mS/cm</div>
+                            <div class="table__leftitem">TDS, ppm</div>
+                            <div class="table__leftitem">Booster PK+, g/L</div>
+                            <div class="table__leftitem">EC, mS/cm</div>
+                            <div class="table__leftitem">TDS, ppm</div>
+                            <div class="table__leftitem">EC total, mS/cm</div>
+                            <div class="table__leftitem">TDS total, ppm</div>
+                        </div>
+
+                        <div class="table__right" id="scrolling-table">
+                            <div class="table__giant table__giant--short">
+                                <div class="title growing">Growing</div>
+                                <div class="title flowering">Flowering</div>
+
+                                <div class="times cell">
+                                    Seedlings
+                                    <div class="sub">&gt;15 cm</div>
+                                </div>
+
+                                <div class="times cell">
+                                    Young
+                                    <div class="sub">15–25 cm</div>
+                                </div>
+
+                                <div class="times cell">
+                                    Maturing
+                                    <div class="sub">25–35 cm</div>
+                                </div>
+
+                                <div class="times cell">
+                                    Mature
+                                    <div class="sub">>35 cm</div>
+                                </div>
+
+                                <div class="times cell">
+                                    Week 1
+                                </div>
+
+                                <div class="times cell">
+                                    Week 2
+                                </div>
+
+                                <div class="times cell">
+                                    Week 3
+                                </div>
+
+                                <div class="times cell">
+                                    Week 4
+                                </div>
+
+                                <div class="times cell">
+                                    Week 5
+                                </div>
+
+                                <div class="times cell">
+                                    Week 6
+                                </div>
+
+                                <div class="times cell">
+                                    Week 7
+                                </div>
+
+                                <div class="times cell">
+                                    Week 8
+                                </div>
+
+                                <div class="times cell">
+                                    Week 9
+                                </div>
+
+
+                                <div class="cell gray border--right">0,6</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,8</div>
+                                <div class="cell gray border--right">0,8</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,6</div>
+                                <div class="cell gray border--right">0,6</div>
+                                <div class="cell gray border--right">0,5</div>
+                                <div class="cell gray border--right">0,4</div>
+                                <div class="cell gray border--right">FLUSH</div>
+
+                                <div class="cell border--right">0,9</div>
+                                <div class="cell border--right">1,0</div>
+                                <div class="cell border--right">1,1</div>
+                                <div class="cell border--right">1,1</div>
+                                <div class="cell border--right">1,2</div>
+                                <div class="cell border--right">1,2</div>
+                                <div class="cell border--right">1,0</div>
+                                <div class="cell border--right">1,0</div>
+                                <div class="cell border--right">0,8</div>
+                                <div class="cell border--right">0,8</div>
+                                <div class="cell border--right">0,7</div>
+                                <div class="cell border--right">0,6</div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+
+                                <div class="cell border--right border--bottom">449</div>
+                                <div class="cell border--right border--bottom">487</div>
+                                <div class="cell border--right border--bottom">562</div>
+                                <div class="cell border--right border--bottom">562</div>
+                                <div class="cell border--right border--bottom">594</div>
+                                <div class="cell border--right border--bottom">594</div>
+                                <div class="cell border--right border--bottom">489</div>
+                                <div class="cell border--right border--bottom">489</div>
+                                <div class="cell border--right border--bottom">419</div>
+                                <div class="cell border--right border--bottom">384</div>
+                                <div class="cell border--right border--bottom">349</div>
+                                <div class="cell border--right border--bottom">280</div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span>
+                                </div>
+
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right">0,3</div>
+                                <div class="cell gray border--right">0,3</div>
+                                <div class="cell gray border--right">0,4</div>
+                                <div class="cell gray border--right">0,5</div>
+                                <div class="cell gray border--right">0.6</div>
+                                <div class="cell gray border--right">0,5</div>
+                                <div class="cell gray border--right">FLUSH</div>
+
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right">0,3</div>
+                                <div class="cell border--right">0,3</div>
+                                <div class="cell border--right">0,4</div>
+                                <div class="cell border--right">0,6</div>
+                                <div class="cell border--right">0.6</div>
+                                <div class="cell border--right">0,5</div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom">150</div>
+                                <div class="cell border--right border--bottom">175</div>
+                                <div class="cell border--right border--bottom">225</div>
+                                <div class="cell border--right border--bottom">250</div>
+                                <div class="cell border--right border--bottom">300</div>
+                                <div class="cell border--right border--bottom">250</div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span>
+                                </div>
+
+
+
+                                <div class="cell gray border--right">0,9</div>
+                                <div class="cell gray border--right">1,0</div>
+                                <div class="cell gray border--right">1,1</div>
+                                <div class="cell gray border--right">1,1</div>
+                                <div class="cell gray border--right">1,2</div>
+                                <div class="cell gray border--right">1,2</div>
+                                <div class="cell gray border--right">1,3</div>
+                                <div class="cell gray border--right">1,3</div>
+                                <div class="cell gray border--right">1,2</div>
+                                <div class="cell gray border--right">1,4</div>
+                                <div class="cell gray border--right">1,3</div>
+                                <div class="cell gray border--right">1,1</div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+
+
+
+
+                                <div class="cell border--right border--bottom">449</div>
+                                <div class="cell border--right border--bottom">487</div>
+                                <div class="cell border--right border--bottom">562</div>
+                                <div class="cell border--right border--bottom">562</div>
+                                <div class="cell border--right border--bottom">594</div>
+                                <div class="cell border--right border--bottom ">639</div>
+                                <div class="cell border--right border--bottom ">664</div>
+                                <div class="cell border--right border--bottom">644</div>
+                                <div class="cell border--right border--bottom">634</div>
+                                <div class="cell border--right border--bottom">649</div>
+                                <div class="cell border--right border--bottom">530</div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="delivery">
+            <div class="container">
+                <div class="double__grid">
+                    <div class="double__unit">
+                        <img src="./img/card.svg" alt="">
+                        <div class="double__title">Оплата</div>
+                        <div>С вами свяжется наш менеджер для <nobr>уточнения деталей</nobr> заказа, после <nobr>
+                                согласования всех</nobr> деталей вам по почте выставят счет на оплату </div>
+                    </div>
+
+                    <div class="double__unit">
+                        <img src="./img/box.svg" alt="">
+                        <div class="double__title">Доставка</div>
+                        <div>После подтверждения оплаты мы бесплатно доставим вам товар в пределах Москвы. <nobr>Для
+                                регионов</nobr> оформим доставку СДЕК <nobr>в удобное</nobr> для вас отделение</div>
+                    </div>
+
+                    <button class="btn"><span>Оставить заявку</span></button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div class="modal__wrapper" id="order-modal">
+  <div class="modal__layout"></div>
+  <div class="modal__container">
+    <button class="modal__close"><img src="./img/close.svg" alt=""></button>
+    <div class="modal__title">
+      Оставьте контакты
+    </div>
+    <div class="modal__sub">
+      Наш менеджер свяжется с вами <nobr>в ближайшее время</nobr> для уточнения всех вопросов и оформления
+      вашего заказа
+    </div>
+
+    <form class="modal__form">
+      <div>
+        <div class="input__label">Как к вам обращаться?</div>
+        <input type="text" class="input" placeholder="Аркадий Сергеевичc" required>
+      </div>
+
+      <div>
+        <div class="input__label">Номер телефона*</div>
+        <input type="text" class="input" placeholder="+7 (000) 000-00-00" value="+7" required>
+      </div>
+
+      <div>
+        <div class="input__label">E-mail*</div>
+        <input type="email" class="input" placeholder="email@domain.com" required>
+      </div>
+
+      <button class="btn"><span>Отправить заявку</span></button>
+    </form>
+  </div>
+</div>
+
+<footer id="contacts" class="footer">
+  <div class="container">
+    <h2>Где купить <nobr>в вашем городе</nobr></h2>
+    <div class="map">
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5edfc1b05fdf0080ac173637a7d3034c30259f804f6790463e452ae3d9870540&amp;width=1168&amp;height=520&amp;lang=ru_RU&amp;scroll=true"
+      ></script>
+    </div>
+  </div>
+  <div class="container" id="#contacts">
+    <div class="contacts__row">
+      <h2>Контакты</h2>
+      <div class="contacts__info address">
+        г.Нижний Новгород, ул.Артельная, д.35, оф.105 <br />Время работы: с
+        10:00 до 18:00
+      </div>
+
+      <div class="contacts__info phones">
+        <a href="tel:+79965662716">+7 (996) 566-27-16</a>
+        <a href="mailto:harma-grow@mail.ru">harma-grow@mail.ru</a>
+      </div>
+      <div class="contacts__socials">
+        <a href="#" target="_blank"
+          ><img src="./img/fa_vk.svg" alt="vkontakte"
+        /></a>
+        <a href="https://wa.me/79965662716" target="_blank"
+          ><img src="./img/fa6-brands_viber.svg" alt="viber"
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="./img/bxl_telegram.svg" alt="telegram"
+        /></a>
+      </div>
+    </div>
+
+    <div class="copy">
+      <b
+        >Абзац 1.10.32 "de Finibus Bonorum et Malorum", написанный Цицероном в
+        45 году н.э.</b
+      >
+      <br />
+      <br />
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+      illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+      explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+      odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+      voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+      quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+      eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+      voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+      corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+      nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+      nulla pariatur?" <br />
+      "But I must explain to you how all this mistaken idea of denouncing
+      pleasure and praising pain was born and I will give you a complete account
+      of the system, and expound the actual teachings of the great explorer of
+      the truth, the master-builder of human happiness. No one rejects,
+      dislikes, or avoids pleasure itself, because it is pleasure, but because
+      those who do not know how to pursue pleasure rationally encounter
+      consequences that are extremely painful. Nor again is there anyone who
+      loves or pursues or desires to obtain pain of itself, because it is pain,
+      but because occasionally circumstances occur in which toil and pain can
+      procure him some great pleasure. To take a trivial example, which of us
+      ever undertakes laborious physical exercise, except to obtain some
+      advantage from it? But who has any right to find fault with a man who
+      chooses to enjoy a pleasure that has no annoying consequences, or one who
+      avoids a pain that produces no resultant pleasure?"
+    </div>
+  </div>
+</footer>
+
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

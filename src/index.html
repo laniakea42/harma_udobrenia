@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Easy-webdev-startpack v3.0",
+"description":"Gulp pack for easy html/php markup development",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<section class="topblock">
+			<div class="container topblock__grid">
+				<div class="sticker">
+					<h1 class="sticker__title">Удобрения <br />и субстраты</h1>
+					<div class="sticker__info">
+						поможем достичь <br />максимальной урожайности <br />высокого качества
+					</div>
+					<div class="sticker__buttons">
+						<button class="btn" data-modal="order-modal"><span>Оставить оптовую заявку</span></button>
+						<a href="#contacts"><button class="btn btn__secondary">Купить в розницу</button></a>
+					</div>
+
+					<div class="sticker__leave-info">
+						Оставьте заявку и наш менеджер свяжется с вами в ближайшее время для уточнения всех вопросов
+						и оформления вашего заказа
+					</div>
+				</div>
+
+				<div class="products">
+					<h2 class="products__title">Продукция</h2>
+
+					<div class="products__grid">
+						<div class="productcard">
+							<div class="productcard__imagecontainer"><img src="./img/prod.webp" alt=""></div>
+							<div class="productcard__bottom">
+								<div>
+									<div class="productcard__logo">
+										<img src="./img/booster.svg" alt="">
+									</div>
+									<div class="productcard__weight">
+										0-52-34<br />0,5 <sub>kg</sub>
+									</div>
+								</div>
+								<div class="productcard__aside">
+									<div class="productcard__show">Химический состав <img src="./img/add.svg" alt="">
+									</div>
+									<div>
+										<b>30% P<sub>2</sub>O<sub>5</sub> </b>Available Phosphate
+										<b>27% K<sub>2</sub>O</b>Soluble Potash
+										<b>5% Mg</b>Magnesium
+										<b>9,0% S</b>Sulfur
+										<b>0,02% B </b>Boron
+										<b>0,1% Fe</b>Iron (chelated EDTA)
+										<b>0,04% Mn</b>Manganese (chelated EDTA)
+										<b>0,004% Mo</b>Molybdenum
+									</div>
+									<a href="/booster.html" class="productcard__learnmore">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="productcard">
+							<div class="productcard__imagecontainer"><img src="./img/prod.webp" alt=""></div>
+							<div class="productcard__bottom">
+								<div>
+									<div class="productcard__logo">
+										<img src="./img/long.svg" alt="">
+									</div>
+									<div class="productcard__weight">
+										18-12-18<br />0,5 <sub>kg</sub>
+									</div>
+								</div>
+								<div class="productcard__aside">
+									<div class="productcard__show">Химический состав <img src="./img/add.svg" alt="">
+									</div>
+									<div> <b>18% N</b>Total Nitrogen
+										<b>12% P<sub>2</sub>O<sub>5</sub></b>Available Phosphate
+										<b>18% K<sub>2</sub>O</b>Soluble Potash
+										<b>1.2% Mg</b>Magnesium
+										<b>1,3% S</b>Sulfur
+										<b>0,01% B </b>Boron
+										<b>0,1% Fe</b>Iron (chelated EDTA)
+										<b>0,04% Mn</b>Manganese (chelated EDTA)
+										<b>0,003% Mo</b>Molybdenum
+									</div>
+									<a class="productcard__learnmore" href="/long.html">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="productcard">
+							<div class="productcard__imagecontainer"><img src="./img/prod.webp" alt=""></div>
+							<div class="productcard__bottom">
+								<div>
+									<div class="productcard__logo">
+										<img src="./img/short.svg" alt="">
+									</div>
+									<div class="productcard__weight">
+										15-16-26<br />2,5 <sub>kg</sub>
+									</div>
+								</div>
+								<div class="productcard__aside">
+									<div class="productcard__show">Химический состав <img src="./img/add.svg" alt="">
+									</div>
+									<div> <b>16% N</b>Total Nitrogen
+										<b>6% P<sub>2</sub>O<sub>5</sub></b>Available Phosphate
+										<b>26% K<sub>2</sub>O</b>Soluble Potash
+										<b>2% Mg</b>Magnesium
+										<b>2,1% S</b>Sulfur
+										<b>0,01% B </b>Boron
+										<b>0,1% Fe</b>Iron (chelated EDTA)
+										<b>0,05% Mn</b>Manganese (chelated EDTA)
+										<b>0,002% Mo</b>Molybdenum
+									</div>
+									<a href="/short.html" class="productcard__learnmore">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="productcard">
+							<div class="productcard__imagecontainer"><img src="./img/prod.webp" alt=""></div>
+							<div class="productcard__bottom">
+								<div>
+									<div class="productcard__logo">
+										<img src="./img/hybrids.svg" alt="">
+									</div>
+									<div class="productcard__weight">
+										15-7-22<br />2,5 <sub>kg</sub>
+									</div>
+								</div>
+								<div class="productcard__aside">
+									<div class="productcard__show">Химический состав <img src="./img/add.svg" alt="">
+									</div>
+									<div> <b>15% N</b>Total Nitrogen
+										<b>7% P<sub>2</sub>O<sub>5</sub></b>Available Phosphate
+										<b>22% K<sub>2</sub>O</b>Soluble Potash
+										<b>3% Mg</b>Magnesium
+										<b>4% S</b>Sulfur
+										<b>0,02% B </b>Boron
+										<b>0,01% Fe</b>Iron (chelated EDTA)
+										<b>0,03% Mn</b>Manganese (chelated EDTA)
+										<b>0,003% Mo</b>Molybdenum
+									</div>
+									<a href="/hybrids.html" class="productcard__learnmore">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="benefits">
+					<div class="benefits__title">Наши преимущества</div>
+
+					<div class="benefits__unit">
+						<img src="./img/ben1.svg" alt="">
+						<div>Специальные условия <nobr>для сити-фермеров и агрономов</nobr>
+						</div>
+					</div>
+
+					<div class="benefits__unit">
+						<img src="./img/ben2.svg" alt="">
+						<div>Простое приготовление <nobr>питательного раствора</nobr>
+						</div>
+					</div>
+
+					<div class="benefits__unit">
+						<img src="./img/ben3.svg" alt="">
+						<div>Доставка по всей России <br />Бесплатная доставка по Москве</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="howtouse">
+			<div class="container">
+				<h2 class="howtouse__title">Как использовать</h2>
+
+				<div class="howtouse__grid">
+					<div class="howtouse__mainunit">
+						<img src="./img/flask-1.svg" alt="">
+						<div> Добавьте необходимое количесвто удобрений в небольшую емкость с теплой водой (250-500 мл)
+						</div>
+					</div>
+
+					<div class="howtouse__subgrid howtouse__subgrid--border">
+						<div class="howtouse__upper">Концентрация г/л</div>
+						<div class="howtouse__upper num">0,5</div>
+						<div class="howtouse__upper num">1,0</div>
+						<div class="howtouse__upper num">1,5</div>
+						<div class="howtouse__upper num">2.0</div>
+						<div class="howtouse__cell">ЕС</div>
+						<div class="howtouse__cell num">0,5</div>
+						<div class="howtouse__cell num">1,0</div>
+						<div class="howtouse__cell num">1,5</div>
+						<div class="howtouse__cell num">2,0</div>
+					</div>
+
+					<div class="howtouse__mainunit border">
+						<img src="./img/flask-2.svg" alt="">
+						<div>Тщательно размешайте <nobr>до полного растворения</nobr>
+						</div>
+					</div>
+
+					<div class="subinfo">Данные рассчитаны для воды с изначальным значением EC 0,0</div>
+
+					<div class="howtouse__mainunit border howtouse__mainunit--last">
+						<img src="./img/flask-3.svg" alt="">
+						<div> Разбавьте получившийся концентрат водой до необходимого вам объема — питательный раствор
+							готов
+						</div>
+					</div>
+
+					<div class="timing__grid">
+						<div class="timing__unit">
+							3–4 неделя: <nobr>2–3г/10л.</nobr>
+							<div>Booster + основной компонент</div>
+						</div>
+						<div class="timing__unit">
+							5–6 неделя: <nobr>3–4г/10л.</nobr>
+							<div>Booster + основной компонент</div>
+						</div>
+						<div class="timing__unit">
+							7–8 неделя: <nobr>4–5г/10л.</nobr>
+							<div>Booster + основной компонент</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="delivery">
+			<div class="container">
+				<div class="double__grid">
+					<div class="double__unit">
+						<img src="./img/card.svg" alt="">
+						<div class="double__title">Оплата</div>
+						<div>С вами свяжется наш менеджер для <nobr>уточнения деталей</nobr> заказа, после <nobr>
+								согласования всех</nobr> деталей вам по почте выставят счет на оплату </div>
+					</div>
+
+					<div class="double__unit">
+						<img src="./img/box.svg" alt="">
+						<div class="double__title">Доставка</div>
+						<div>После подтверждения оплаты мы бесплатно доставим вам товар в пределах Москвы. <nobr>Для
+								регионов</nobr> оформим доставку СДЕК <nobr>в удобное</nobr> для вас отделение</div>
+					</div>
+
+					<button class="btn"><span>Оставить заявку</span></button>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="about">
+			<div class="container">
+				<div>
+					<img src="./img/about-m.svg" alt="" class="hide--desktop">
+					<h2 class="about__title">О компании</h2>
+					<p>harmanutrients.ru является надежным поставщиком высококачественных порошкообразных удобрений и
+						субстратов для городских фермеров в России. Наша уникальная формула гарантирует обильный урожай
+						каждый сезон.</p>
+					<p> Доверьте нам помощь в выращивании лучших культур благодаря нашей приверженности качеству,
+						которая отражается в каждом продукте. Почувствуйте разницу сами, свяжитесь с нами сегодня, чтобы
+						разместить заказ и воспользоваться преимуществами успешного сезона сбора урожая</p>
+				</div>
+				<img src="./img/about.svg" alt="" class="hide--mobile">
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

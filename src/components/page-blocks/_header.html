@@ -1,0 +1,51 @@
+<header class="header">
+  <div class="header__container">
+    <a href="/" class="header__logo"><img src="../img/logo.svg" alt="" /></a>
+    <nav class="nav">
+      <a href="#delivery" class="nav__item">Доставка и оплата</a>
+      <a href="#about" class="nav__item">О компании</a>
+      <a href="#contacts" class="nav__item">Где купить</a>
+      <a href="#contacts" class="nav__item">Контакты</a>
+      <a href="#" class="nav__item nav__item--right" data-modal="order-modal"
+        >Заказать</a
+      >
+    </nav>
+
+    <svg
+      class="ham hamRotate ham4 nav--btn"
+      viewBox="0 0 100 100"
+      width="80"
+      onclick="this.classList.toggle('active')"
+    >
+      <path
+        class="line top"
+        d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+      />
+      <path class="line middle" d="m 70,50 h -40" />
+      <path
+        class="line bottom"
+        d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+      />
+    </svg>
+
+    <div class="nav--menu">
+      <a href="#delivery" class="nav__item nav__item--mobile">Доставка и оплата</a>
+      <a href="#about" class="nav__item nav__item--mobile">О компании</a>
+      <a href="#contacts" class="nav__item nav__item--mobile">Где купить</a>
+      <a href="#contacts" class="nav__item nav__item--mobile">Контакты</a>
+      <a href="#" class="nav__item nav__item--order nav__item--mobile" data-modal="order-modal"
+        >Заказать <img src="./img/cart.svg" alt=""
+      /></a>
+
+      <div class="header__contacts">
+        г.Нижний Новгород, <br />ул.Артельная, д.35, оф.105 <br />Время работы:
+        с 10:00 до 18:00
+      </div>
+
+      <div class="header__contacts">
+        <a href="tel:+79965662716">+7 (996) 566-27-16</a>
+        <a href="mailto:harma-grow@mail.ru">harma-grow@mail.ru</a>
+      </div>
+    </div>
+  </div>
+</header>

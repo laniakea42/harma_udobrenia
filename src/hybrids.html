@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Easy-webdev-startpack v3.0",
+"description":"Gulp pack for easy html/php markup development",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+    @@include('components/page-blocks/_header.html')
+    <main class="main">
+        <section class="topblock product">
+            <div class="container topblock__grid topblock__grid--product">
+                <div class="sticker product">
+                    <div class="topblock__productheading">
+                        <h1 class="sticker__title sticker__title--picture"><img src="./img/hybrids.svg" alt=""></h1>
+                        <div class="sticker__weight">
+                            <div>15-7-22</div>
+                            <div>2.5 kg</div>
+                        </div>
+                    </div>
+                    <div class="sticker__info italic">
+                        HARMA POWDER<br />NUTRIENTS HYBRIDS
+                    </div>
+
+                    <div class="sticker__productinfo">
+                        это эффективное однокомпонентное минеральное удобрение, имеющее комплексный и сбалансированный
+                        состав для гибридных растений.
+                    </div>
+                    <div class="sticker__buttons">
+                        <button class="btn" data-modal="order-modal"><span>Оставить оптовую заявку</span></button>
+                        <a href="#contacts"><button class="btn btn__secondary">Купить в розницу</button></a>
+                    </div>
+
+                    <div class="sticker__leave-info product">
+                        Оставьте заявку и наш менеджер свяжется с вами в ближайшее время для уточнения всех вопросов
+                        и оформления вашего заказа
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="./img//booster-pic.png" alt="" class="topblock__productpic">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contents">
+            <div class="container">
+                <div class="contents__grid">
+                    <div>
+                        <h2 class="contents__title">Состав макроэлементов <nobr>и их пропорции:</nobr>
+                        </h2>
+                        <div class="contents__subgrid">
+                            <div class="contents__col">
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">7% </div>
+                                        <div>P<sub>2</sub>O<sub>5</sub></div>
+                                    </div>
+                                    <div>Водорастворимый фосфат</div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">4% </div>
+                                        <div>S</div>
+                                    </div>
+                                    <div>Сера</div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">5% </div>
+                                        <div>NH<sub>3</sub>N</div>
+                                    </div>
+                                    <div>Амиачный азот</div>
+                                </div>
+                            </div>
+
+                            <div class="contents__col">
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">22% </div>
+                                        <div>K<sub>2</sub>O</div>
+                                    </div>
+                                    <div>Водорастворимый калий</div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">10% </div>
+                                        <div>NS</div>
+                                    </div>
+                                    <div>Нитрат азота</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="contents__title">Состав микроэлементов <nobr>и их пропорции:</nobr>
+                        </h2>
+                        <div class="contents__subgrid">
+                            <div class="contents__col">
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">3% </div>
+                                        <div>Mg</div>
+                                    </div>
+                                    <div>Растворимый магний</div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">0,03%</div>
+                                        <div>Mn</div>
+                                    </div>
+                                    <div>Растворимый Марганец <nobr>(как хелат с EDTA)</nobr>
+                                    </div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">0,003%</div>
+                                        <div>Mo</div>
+                                    </div>
+                                    <div>Молибден</div>
+
+                                </div>
+                            </div>
+
+                            <div class="contents__col">
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">0.02% </div>
+                                        <div>B</div>
+                                    </div>
+                                    <div>Растворимый бор</div>
+                                </div>
+
+                                <div class="contents__item">
+                                    <div class="top">
+                                        <div class="weight">0,01%</div>
+                                        <div>Fe</div>
+                                    </div>
+                                    <div>Растворимого железа <nobr>(в хелатной форме EDTA)</nobr>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <section class="table">
+            <div class="container">
+                <div class="table__title">
+                    <h2>Таблица кормления:</h2>
+                </div>
+
+                <div class="table__container">
+                    <div class="table__grid">
+                        <div class="table__left">
+                            <div class="table__leftitem">longFlowering, g/L</div>
+                            <div class="table__leftitem">EC, mS/cm</div>
+                            <div class="table__leftitem">TDS, ppm</div>
+                            <div class="table__leftitem">Booster PK+, g/L</div>
+                            <div class="table__leftitem">EC, mS/cm</div>
+                            <div class="table__leftitem">TDS, ppm</div>
+                            <div class="table__leftitem">EC total, mS/cm</div>
+                            <div class="table__leftitem">TDS total, ppm</div>
+                        </div>
+
+                        <div class="table__right" id="scrolling-table">
+                            <div class="table__giant table__giant--hybrids">
+                                <div class="title growing">Growing</div>
+                                <div class="title flowering">Flowering</div>
+
+                                <div class="times cell">
+                                    Seedlings
+                                    <div class="sub">&gt;15 cm</div>
+                                </div>
+
+                                <div class="times cell">
+                                    Young
+                                    <div class="sub">15–25 cm</div>
+                                </div>
+
+                                <div class="times cell">
+                                    Maturing
+                                    <div class="sub">25–35 cm</div>
+                                </div>
+
+                                <div class="times cell">
+                                    Mature
+                                    <div class="sub">>35 cm</div>
+                                </div>
+
+                                <div class="times cell">
+                                    Week 1
+                                </div>
+
+                                <div class="times cell">
+                                    Week 2
+                                </div>
+
+                                <div class="times cell">
+                                    Week 3
+                                </div>
+
+                                <div class="times cell">
+                                    Week 4
+                                </div>
+
+                                <div class="times cell">
+                                    Week 5
+                                </div>
+
+                                <div class="times cell">
+                                    Week 6
+                                </div>
+
+                                <div class="times cell">
+                                    Week 7
+                                </div>
+
+                                <div class="times cell">
+                                    Week 8
+                                </div>
+
+                                <div class="times cell">
+                                    Week 9
+                                </div>
+
+                                <div class="times cell">
+                                    Week 10
+                                </div>
+
+
+                                <div class="cell gray border--right">0,6</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,8</div>
+                                <div class="cell gray border--right">0,8</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,6</div>
+                                <div class="cell gray border--right">0,6</div>
+                                <div class="cell gray border--right">0,5</div>
+                                <div class="cell gray border--right">0,5</div>
+                                <div class="cell gray border--right">0,4</div>
+                                <div class="cell gray border--right">FLUSH</div>
+
+                                <div class="cell border--right">0,9</div>
+                                <div class="cell border--right">1,0</div>
+                                <div class="cell border--right">1,1</div>
+                                <div class="cell border--right">1,1</div>
+                                <div class="cell border--right">1,2</div>
+                                <div class="cell border--right">1,2</div>
+                                <div class="cell border--right">1,0</div>
+                                <div class="cell border--right">1,0</div>
+                                <div class="cell border--right">0,8</div>
+                                <div class="cell border--right">0,8</div>
+                                <div class="cell border--right">0,7</div>
+                                <div class="cell border--right">0,7</div>
+                                <div class="cell border--right">0,6</div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+
+                                <div class="cell border--right border--bottom">449</div>
+                                <div class="cell border--right border--bottom">487</div>
+                                <div class="cell border--right border--bottom">562</div>
+                                <div class="cell border--right border--bottom">562</div>
+                                <div class="cell border--right border--bottom">594</div>
+                                <div class="cell border--right border--bottom">594</div>
+                                <div class="cell border--right border--bottom">489</div>
+                                <div class="cell border--right border--bottom">489</div>
+                                <div class="cell border--right border--bottom">419</div>
+                                <div class="cell border--right border--bottom">384</div>
+                                <div class="cell border--right border--bottom">349</div>
+                                <div class="cell border--right border--bottom">349</div>
+                                <div class="cell border--right border--bottom">280</div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span>
+                                </div>
+
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+                                <div class="cell gray border--right">0,3</div>
+                                <div class="cell gray border--right">0,3</div>
+                                <div class="cell gray border--right">0,4</div>
+                                <div class="cell gray border--right">0,5</div>
+                                <div class="cell gray border--right">0,6</div>
+                                <div class="cell gray border--right">0,6</div>
+                                <div class="cell gray border--right">0,5</div>
+                                <div class="cell gray border--right">FLUSH</div>
+
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+                                <div class="cell border--right">0,3</div>
+                                <div class="cell border--right">0,3</div>
+                                <div class="cell border--right">0,4</div>
+                                <div class="cell border--right">0,5</div>
+                                <div class="cell border--right">0,6</div>
+                                <div class="cell border--right">0,6</div>
+                                <div class="cell border--right">0,5</div>
+                                <div class="cell border--right"><span class="transparent">0</span></div>
+
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span></div>
+                                <div class="cell border--right border--bottom">150</div>
+                                <div class="cell border--right border--bottom">175</div>
+                                <div class="cell border--right border--bottom">225</div>
+                                <div class="cell border--right border--bottom">250</div>
+                                <div class="cell border--right border--bottom">300</div>
+                                <div class="cell border--right border--bottom">300</div>
+                                <div class="cell border--right border--bottom">250</div>
+                                <div class="cell border--right"><span class="transparent">0</span>
+                                </div>
+
+
+
+                                <div class="cell gray border--right">0,6</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,7</div>
+                                <div class="cell gray border--right">0,8</div>
+                                <div class="cell gray border--right">0,8</div>
+                                <div class="cell gray border--right">1,0</div>
+                                <div class="cell gray border--right">1,0</div>
+                                <div class="cell gray border--right">1,0</div>
+                                <div class="cell gray border--right">1,1</div>
+                                <div class="cell gray border--right">1,1</div>
+                                <div class="cell gray border--right">1,1</div>
+                                <div class="cell gray border--right">0.9</div>
+                                <div class="cell gray border--right"><span class="transparent">0</span></div>
+
+                                <div class="cell border--right border--bottom">449</div>
+                                <div class="cell border--right border--bottom">487</div>
+                                <div class="cell border--right border--bottom">562</div>
+                                <div class="cell border--right border--bottom">562</div>
+                                <div class="cell border--right border--bottom">594</div>
+                                <div class="cell border--right border--bottom">594</div>
+                                <div class="cell border--right border--bottom">639</div>
+                                <div class="cell border--right border--bottom">664</div>
+                                <div class="cell border--right border--bottom">644</div>
+                                <div class="cell border--right border--bottom">634</div>
+                                <div class="cell border--right border--bottom">649</div>
+                                <div class="cell border--right border--bottom">649</div>
+                                <div class="cell border--right border--bottom">530</div>
+                                <div class="cell border--right border--bottom"><span class="transparent">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="delivery">
+            <div class="container">
+                <div class="double__grid">
+                    <div class="double__unit">
+                        <img src="./img/card.svg" alt="">
+                        <div class="double__title">Оплата</div>
+                        <div>С вами свяжется наш менеджер для <nobr>уточнения деталей</nobr> заказа, после <nobr>
+                                согласования всех</nobr> деталей вам по почте выставят счет на оплату </div>
+                    </div>
+
+                    <div class="double__unit">
+                        <img src="./img/box.svg" alt="">
+                        <div class="double__title">Доставка</div>
+                        <div>После подтверждения оплаты мы бесплатно доставим вам товар в пределах Москвы. <nobr>Для
+                                регионов</nobr> оформим доставку СДЕК <nobr>в удобное</nobr> для вас отделение</div>
+                    </div>
+
+                    <button class="btn"><span>Оставить заявку</span></button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    @@include('components/page-blocks/_footer.html')
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
